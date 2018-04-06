@@ -1,0 +1,101 @@
+OSGi run configuration
+Copyright 2018 Smartrplace UG
+
+// ------------------------------------------------------------------
+// This product includes the following projects
+// ------------------------------------------------------------------
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Felix framework (http://felix.apache.org/), system/org.apache.felix.framework-5.6.10.jar
+  - Apache Felix launcher (http://felix.apache.org/documentation/subprojects/apache-felix-framework/apache-felix-framework-launching-and-embedding.html), system/felix-launcher.jar
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+ 
+From: 'Smartrplace UG' (http://www.smartrplace.de)
+   - Maven resolver (https://github.com/smartrplace/maven-resolver), bundle/maven-resolver-1.0.0-SNAPSHOT.jar
+   - UPNP provider, init/upnp-provider-1.0.0-SNAPSHOT.jar
+     License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+   - fendoDB (https://github.com/smartrplace/fendodb)
+     License: GPL, Version 3.0  (https://www.gnu.org/licenses/gpl-3.0.en.html)
+   - UPNP icon extension, init/upnp-provider-icon-smartrplace-1.0.0-SNAPSHOT.jar
+
+From 'Scream3r' (github)
+  - JSSC - Java Simple Serial Connector (https://github.com/scream3r/java-simple-serial-connector), ext/jssc-2.8.0.jar
+    License: LGPL v3.0 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+
+From 'usb4java' (http://usb4java.org/) 
+  - libusb4java (https://github.com/usb4java/libusb4java), ext/libusb4java-1.2.0-(linux-arm|linux-x86|linux-x86_64|windows-x86|windows-x86_64).jar
+  - usb4java (https://github.com/usb4java/usb4java), ext/usb4java-1.2.0.jar,  ext/usb4java-javax-1.2.0.jar  
+    License: LGPL v3.0 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+
+From 'zgmnkv' (github)
+  - zwave4j (https://github.com/zgmnkv/zwave4j) ext/zwave4j-0.6-SNAPSHOT.jar
+    License: MIT (https://opensource.org/licenses/MIT)
+
+From OpenZWave (http://www.openzwave.com/)
+  - OpenZWave (https://github.com/OpenZWave/open-zwave), included in ext/zwave4j-0.6-SNAPSHOT.jar
+    License: LGPL v3.0 (http://www.gnu.org/licenses/lgpl-3.0.txt)
+
+// ------------------------------------------------------------------
+// Dependencies of this project
+// ------------------------------------------------------------------
+
+From: 'The Apache Software Foundation' (http://www.apache.org/)
+  - Apache Felix framework security (http://felix.apache.org/), org.apache.felix:org.apache.felix.framework.security:jar:2.6.0
+  - Apache Felix SCR (http://felix.apache.org/), org.apache.felix:org.apache.felix.scr:jar:2.0.12:jar
+  - Apache Felix Configadmin (http://felix.apache.org/), org.apache.felix:org.apache.felix.configadmin:jar:1.8.14:jar
+  - Apache Felix Event Admin (http://felix.apache.org/), org.apache.felix:org.apache.felix.eventadmin:jar:1.4.8:jar
+  - Apache Felix Fileinstall (http://felix.apache.org/), org.apache.felix:org.apache.felix.fileinstall:jar:3.6.0:jar
+  - Apache Felix Gogo runtime (http://felix.apache.org/), org.apache.felix:org.apache.felix.gogo.runtime:jar:1.0.10:jar
+  - Apache Felix Gogo command (http://felix.apache.org/), org.apache.felix:org.apache.felix.gogo.command:jar:1.0.2:jar
+  - Apache Felix Gogo jline (http://felix.apache.org/), org.apache.felix:org.apache.felix.gogo.jline:jar:1.0.10:jar
+  - Apache Felix Http Servlet API (http://felix.apache.org/), org.apache.felix:org.apache.felix.http.servlet-api:jar:1.1.2:jar
+  - Apache Felix Http Jetty (http://felix.apache.org/), org.apache.felix:org.apache.felix.http.jetty:jar:3.4.8:jar
+  - Apache Felix User Admin (http://felix.apache.org/), org.apache.felix:org.apache.felix.useradmin:jar:1.0.3:jar
+  - Apache Felix User Admin Filestore (http://felix.apache.org/), org.apache.felix:org.apache.felix.useradmin.filestore:jar:1.0.2:jar
+  - Apache Felix Metatype (http://felix.apache.org/), org.apache.felix:org.apache.felix.metatype:jar:1.1.2:jar
+  - Apache Felix WebConsole (http://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)
+  - Apache Felix Inventory Printer (http://felix.apache.org/documentation/subprojects/apache-felix-inventory.html)
+  - Commons Fileupload 
+  - Commons IO
+  - Commons Codec
+  - Commons Lang3
+  - Groovy (http://groovy-lang.org/), org.codehaus.groovy:groovy-all:jar:2.4.12
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'The OSGi alliance' (http://www.osgi.org)
+  - OSGi core API (https://mvnrepository.com/artifact/org.osgi/org.osgi.core/5.0.0) org.osgi:org.osgi.core:jar:5.0.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'QOS.ch' (http://www.qos.ch)
+  - SLF4J API Module (http://www.slf4j.org) org.slf4j:slf4j-api:jar:1.7.25
+  - SLF4J Simple Module (http://www.slf4j.org) org.slf4j:slf4j-simple:jar:1.7.25
+  - OSGi over SLF4j (http://www.slf4j.org) org.slf4j:osgi-over-slf4j:jar:1.7.25
+  - Log4j over SLF4j (http://www.slf4j.org) org.slf4j:log4j-over-slf4j:jar:1.7.25
+  - JUL to SLF4j (http://www.slf4j.org) org.slf4j:jul-to-slf4j:jar:1.7.25
+  - JCL over SLF4j (http://www.slf4j.org) org.slf4j:jcl-over-slf4j:jar:1.7.25
+    License: MIT License  (http://www.opensource.org/licenses/mit-license.php)
+
+From individual authors:
+  - JLine (https://jline.github.io/), org.jline:jline:jar:3.6.2
+    License: BSD license (http://www.opensource.org/licenses/bsd-license.php)
+
+From 'json.org' (http://json.org)
+  - org.json (http://json.org) org.json:json:jar:20170516
+    License: see http://json.org/license.html
+
+From 'Google' (http://google.
+  - Guava (https://github.com/google/guava/) com.google.guava:guava:jar:23.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From 'joda.org' (http://www.joda.org)
+  - Joda time (http://www.joda.org/joda-time/)
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From 'FasterXML' (http://fasterxml.com/)
+  - Jackson JSON library (https://github.com/FasterXML/jackson-core)
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+
+From: 'Fraunhofer Gesellschaft' (https://www.fraunhofer.de/)
+  - OGEMA (https://github.com/ogema/ogema) v2.1.3
+  - OGEMA Widgets  (https://github.com/ogema/ogema-widgets) v2.1.3
+    License: GPL, Version 3.0  (https://www.gnu.org/licenses/gpl-3.0.en.html)

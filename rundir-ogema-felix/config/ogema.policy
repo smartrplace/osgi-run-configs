@@ -1,0 +1,10 @@
+# we trust all preinstalled bundles
+allow { [org.osgi.service.condpermadmin.BundleLocationCondition "file:*"] (java.security.AllPermission) } "all_file"
+allow { [org.osgi.service.condpermadmin.BundleLocationCondition "mvn-init:*"] (java.security.AllPermission) } "all_mvninit"
+allow { [org.osgi.service.condpermadmin.BundleLocationCondition "file-init:*"] (java.security.AllPermission) } "all_initdir"
+
+# user rights proxies:
+allow { [org.osgi.service.condpermadmin.BundleLocationCondition "urp:*"] (org.osgi.framework.PackagePermission "org.ogema.accesscontrol" "import") (org.osgi.framework.PackagePermission "org.osgi.*" "import") (org.osgi.framework.PackagePermission "org.ogema.core.application" "import") (org.osgi.framework.PackagePermission "org.slf4j" "import") (org.osgi.framework.PackagePermission "org.apache.felix.scr.annotations" "import") (org.osgi.framework.ServicePermission "org.ogema.accesscontrol.UserRightsProxy" "register") (org.osgi.framework.ServicePermission "org.ogema.core.application.Application" "register") (org.osgi.framework.ServicePermission "org.ogema.accesscontrol.PermissionManager" "get")} "urps"
+# basic pages visible to all users
+allow { [org.osgi.service.condpermadmin.BundleLocationCondition "urp:*"] (org.ogema.accesscontrol.WebAccessPermission "name=de.iwes.widgets.ogema-js-bundle") (org.ogema.accesscontrol.WebAccessPermission "name=org.ogema.ref-impl.framework-gui")(org.ogema.accesscontrol.WebAccessPermission "name=de.iwes.widgets.widget-experimental")(org.ogema.accesscontrol.WebAccessPermission "name=de.iwes.widgets.widget-collection") } "staticpagepermissions"
+

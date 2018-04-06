@@ -1,0 +1,11 @@
+target/
+.settings
+.classpath
+.metadata
+.recommenders
+*~
+*.class
+pom.xml.versionsBackup
+pom.xml.releaseBackup
+data/
+security/users/

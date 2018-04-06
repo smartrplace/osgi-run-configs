@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+[
+	<!ENTITY slf4j-version "1.7.25">
+]>
+<configuration>
+	<bundles>
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.framework.security" version="2.6.0" startLevel="1" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.scr" version="2.0.12" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.configadmin" version="1.8.14" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.metatype" version="1.1.2" startLevel="2" />
+ 		<bundle groupId="org.osgi" artifactId="org.osgi.service.useradmin" version="1.1.0" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.useradmin" version="1.0.3" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.useradmin.filestore" version="1.0.2" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.fileinstall" version="3.6.0" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.http.servlet-api" version="1.1.2" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.eventadmin" version="1.4.8" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.gogo.runtime" version="1.0.10" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.gogo.command" version="1.0.2" startLevel="2" />
+	 	<bundle groupId="org.jline" artifactId="jline" version="3.6.2" startLevel="2" />
+		<bundle groupId="org.apache.felix" artifactId="org.apache.felix.gogo.jline" version="1.0.10" startLevel="3" />
+		<bundle dir="bin/osgi" groupId="org.apache.felix" artifactId="org.apache.felix.http.servlet-api" version="1.1.2" startLevel="2" />
+		<!-- Jetty web server -->
+		<bundle dir="bin/osgi" groupId="org.apache.felix" artifactId="org.apache.felix.http.jetty" version="3.4.8" startLevel="3" />
+		<!-- logging -->
+		<bundle groupId="org.slf4j" artifactId="slf4j-api" version="&slf4j-version;" startLevel="3"/>
+		<bundle groupId="org.slf4j" artifactId="slf4j-simple" version="&slf4j-version;" startLevel="3"/>
+		<bundle groupId="org.slf4j" artifactId="osgi-over-slf4j" version="&slf4j-version;" startLevel="3"/>
+		<bundle groupId="org.slf4j" artifactId="log4j-over-slf4j" version="&slf4j-version;" startLevel="3"/>
+		<bundle groupId="org.slf4j" artifactId="jul-to-slf4j" version="&slf4j-version;" startLevel="3"/>
+		<bundle groupId="org.slf4j" artifactId="jcl-over-slf4j" version="&slf4j-version;" startLevel="3"/>
+
+	</bundles>
+</configuration>

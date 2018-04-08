@@ -1,4 +1,4 @@
 allow { [natural "master"] (java.security.AllPermission)} "master"
 allow { [natural "test"] (org.ogema.accesscontrol.WebAccessPermission "name=*")} "test"
 allow { [natural "guest"] (org.ogema.accesscontrol.WebAccessPermission "name=org.ogema.ref-impl.framework-gui")} "guest"
-allow { [machine "rest"] (org.ogema.accesscontrol.ResourcePermission "path=*" "read,write")} "rest"
+allow { [machine "rest"] (org.ogema.accesscontrol.ResourcePermission "path=*" "read,write") (org.smartrplace.logging.fendodb.permissions.FendoDbPermission "*" "*") } "rest"

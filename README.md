@@ -2,6 +2,7 @@
 Contains various OSGi run configurations
 
 ## Projects
+* `fendodb-reader`: a standalone tool for parsing FendoDB/SlotsDB data; see [README](https://github.com/smartrplace/osgi-run-configs/tree/master/fendodb-reader) ([download jar](https://github.com/smartrplace/osgi-run-configs/raw/master/fendodb-reader/FendoDbReader-0.0.2.jar))
 * `rundir-osgi`: a minimal OSGi configuration, which can be used as a template for real projects ([download zip](https://github.com/smartrplace/osgi-run-configs/raw/master/rundir-osgi/rundir-osgi.zip))
 * `rundir-ogema-felix`: a run configuration for OGEMA, which includes the [FendoDB data logger](https://github.com/smartrplace/fendodb) and the [OGEMA widgets](https://github.com/ogema/ogema-widgets) ([download zip](https://github.com/smartrplace/osgi-run-configs/raw/master/rundir-ogema-felix/rundir-ogema-felix.zip))
 

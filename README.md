@@ -2,15 +2,16 @@
 Contains various OSGi run configurations
 
 ## Projects
-* `rundir-osgi`: a minimal OSGi configuration, which can be used as a template for real projects
-* `rundir-ogema-felix`: a run configuration for OGEMA, which includes the [FendoDB data logger](https://github.com/smartrplace/fendodb) and the [OGEMA widgets](https://github.com/ogema/ogema-widgets)
+* `rundir-osgi`: a minimal OSGi configuration, which can be used as a template for real projects ([download zip](https://github.com/smartrplace/osgi-run-configs/raw/master/rundir-osgi/rundir-osgi.zip))
+* `rundir-ogema-felix`: a run configuration for OGEMA, which includes the [FendoDB data logger](https://github.com/smartrplace/fendodb) and the [OGEMA widgets](https://github.com/ogema/ogema-widgets) ([download zip](https://github.com/smartrplace/osgi-run-configs/raw/master/rundir-ogema-felix/rundir-ogema-felix.zip))
 
 ## Run
-To run of the configurations, execute the provided start scripts (`start.sh` for Bash-compatible shells, or `start.bat` for a Windows shell), or import the projects into the Eclipse IDE and use one of the provided launch configurations.
+To run one of the configurations, execute the provided start scripts (`start.sh` for Bash-compatible shells, or `start.bat` for a Windows shell), or import the projects into the Eclipse IDE and use one of the provided launch configurations.
 
 ## Parameters
 * `-clean`: clean start (if not set, and the framework had been started before, then the saved instance will be restarted)
 * `-security`: activate OSGi/OGEMA security
+
 Hence a clean start with security enabled can be achieved by executing
 ```
 ./start.sh -clean -security
